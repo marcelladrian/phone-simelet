@@ -1,4 +1,11 @@
-/* The device with borders */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 .smartphone {
   position: relative;
   width: 360px;
