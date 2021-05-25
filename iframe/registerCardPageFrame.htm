@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AddCardPage</title>
-    <!-- <link rel="stylesheet" href="../styles/menu_scss/menu.css" /> -->
-    <link rel="stylesheet" href="../styles/addCard_scss/addCard.css" />
-    <!-- <script src="../script/menu_script/menu.js"></script> -->
-    <script src="../script/addCard_js/addCard.js"></script>
+    <title>RegisterCardPage</title>
+    <link rel="stylesheet" href="../styles/menu_scss/menu.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/registerCard_scss/registerCard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -55,46 +60,49 @@
         <div class="menuIcon"></div>
         <div class="menuIcon"></div>
       </div>
-      <h2>Add Card</h2>
+      <h2>Register Card</h2>
     </div>
     <!-- header -->
 
     <!-- add card content -->
     <div class="content">
+      <img src="../asset/logo.png" />
       <div class="field">
         <form action="RegisterPageFrame.htm">
-          <label for="cardName">CARD NAME</label><br />
-          <input type="text" id="cardName" name="cardName" /><br />
-          <label for="balanceId">BALANCE ID</label><br />
-          <input type="text" id="balanceId" name="balanceId" /><br />
-          <h1 class="cardDesign">CHOOSE YOUR CARD DESIGN</h1>
-
-          <!-- slideshow -->
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="../asset/card1.png" style="width: 50%" />
-            </div>
-            <div class="mySlides fade">
-              <img src="../asset/card2.png" style="width: 50%" />
-            </div>
-            <div class="mySlides fade">
-              <img src="../asset/card3.png" style="width: 50%" />
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <!-- slideshow -->
-
-          <div class="addCardBtn">
-            <button>ADD CARD</button>
-          </div>
-          <h6>HAVEN’T REGISTERED YET?</h6>
-          <div class="registerCardBtn">
-            <button>REGISTER CARD</button>
-          </div>
+          <label class="balance" for="balance">BALANCE</label><br />
+          <input type="number" id="balance" name="balance" /><br />
+          <label class="password" for="password">PASSWORD</label><br />
+          <input type="password" id="password" name="password" />
+          <i class="fa fa-eye" id="togglePassword"></i><br />
+          <label class="confirmPassword" for="confirmPassword"
+            >CONFIRM PASSWORD</label
+          ><br />
+          <input type="password" id="confirmPassword" name="confirmPassword" />
+          <i class="fa fa-eye" id="toogleConfirmPassword"></i>
         </form>
+
+        <div class="registerCardBtn">
+          <button id="myBtn">REGISTER CARD</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="message">
+              <h4>YOUR BALANCE ID :</h4> <br>
+              <h3>bHASDbhsadhsdajiXI10dsaS4x</h3>
+              <button class="okBtn" onclick="location.href='addCardPageFrame.htm'">
+                GO TO ADD CARD
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- add card content -->
+
+    <script src="../script/menu_js/menu.js"></script>
+    <script src="../script/registerCard_js/registerCard.js"></script>
   </body>
 </html>

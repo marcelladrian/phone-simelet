@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddCardPage</title>
+    <link rel="stylesheet" href="../styles/menu_scss/menu.css" />
+    <link rel="stylesheet" href="../styles/addCard_scss/addCard.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div id="mySidenav" class="sidenav">
+      <h2 class="menuText">MENU</h2>
+      <h5 class="userText">Welcome, Calvin Frans E</h5>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <div class="cardMenu">
+        <img class="cardImg" src="../asset/card.png" alt="card" />
+        <a class="cardTitle" href="#">Card</a>
+      </div>
+
+      <div class="topUpMenu">
+        <img class="topUpImg" src="../asset/topup.png" alt="topup" />
+        <a class="topUpTitle" href="#">Top Up</a>
+      </div>
+
+      <div class="addRegisterCardMenu">
+        <img
+          class="addRegisterCardImg"
+          src="../asset/addregistercard.png"
+          alt="addregistercard"
+        />
+        <a class="addRegisterCardTitle" href="#">Add / Register Card</a>
+      </div>
+
+      <div class="profileMenu">
+        <img class="profileImg" src="../asset/profile.png" alt="topup" />
+        <a class="profileTitle" href="#">Profile</a>
+      </div>
+
+      <div class="settingsMenu">
+        <img class="settingsImg" src="../asset/settings.png" alt="topup" />
+        <a class="settingsTitle" href="#">Settings</a>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="hamburgerIcon" onclick="openNav()">
+        <div class="menuIcon"></div>
+        <div class="menuIcon"></div>
+        <div class="menuIcon"></div>
+      </div>
+      <h2>Add Card</h2>
+    </div>
+    <!-- header -->
+
+    <!-- add card content -->
+    <div class="content">
+      <div class="field">
+        <form action="RegisterPageFrame.htm">
+          <label for="cardName">CARD NAME</label><br />
+          <input type="text" id="cardName" name="cardName" /><br />
+          <label for="balanceId">BALANCE ID</label><br />
+          <input type="text" id="balanceId" name="balanceId" /><br />
+          <h1 class="cardDesign">CHOOSE YOUR CARD DESIGN</h1>
+
+          <!-- slideshow -->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="../asset/card1.png" style="width: 40%" />
+            </div>
+            <div class="mySlides fade">
+              <img src="../asset/card2.png" style="width: 40%" />
+            </div>
+            <div class="mySlides fade">
+              <img src="../asset/card3.png" style="width: 40%" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </form>
+        <div class="addCardBtn">
+          <button id="myBtn">ADD CARD</button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="message">
+              <div class="success-checkmark">
+                <div class="check-icon">
+                  <span class="icon-line line-tip"></span>
+                  <span class="icon-line line-long"></span>
+                  <div class="icon-circle"></div>
+                  <div class="icon-fix"></div>
+                </div>
+              </div>
+              <h5>ADDING CARD SUCCESS</h5>
+              <button
+                class="okBtn"
+                onclick="location.href='addCardPageFrame.htm'">
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <h6>HAVEN’T REGISTERED YET?</h6>
+        <div class="registerCardBtn">
+          <button onclick="location.href='registerCardPageFrame.htm'">
+            REGISTER CARD
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- add card content -->
+
+    <script src="../script/menu_js/menu.js"></script>
+    <script src="../script/addCard_js/addCard.js"></script>
+  </body>
+</html>
