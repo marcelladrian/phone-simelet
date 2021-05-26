@@ -1,4 +1,3 @@
-/* Variable Top Up */
 html,
 body,
 ul,
@@ -8,7 +7,6 @@ ol {
   font: 100% Roboto, sans-serif;
 }
 
-/* Variable Top Up */
 .profile-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +20,7 @@ ol {
 .profile-content .userInfo h3 {
   margin-top: 19%;
   color: black;
-  -webkit-text-stroke: 0.5px #B80424;
+  -webkit-text-stroke: 0.5px #b80424;
 }
 
 .profile-content .userInfo h4 {

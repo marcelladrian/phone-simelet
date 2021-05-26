@@ -2,7 +2,7 @@
 @import "../reset";
 .header {
     display: $vertical;
-    background-color: $primary-color;
+    background-color: $primary-color-red;
     padding: 4%;
     align-items: center;
     .headerName {
@@ -31,7 +31,7 @@
     @extend %display-shared;
     .content-1-text {
         padding-top: 25%;
-        color: $primary-color;
+        color: $primary-color-red;
         -webkit-text-stroke: 1px black;
         text-shadow: 3px 3px 0 lightgray;
     }
@@ -42,10 +42,8 @@
     margin-left: 10%;
     padding-left: 5%;
     padding-right: 5%;
-    border: 2px solid black;
-    border-radius: 10px;
-    border-color: $primary-color;
-    background-color: $primary-color;
+    @include generateBorder(2px, 10px, $primary-color-red);
+    background-color: $primary-color-red;
     width: 70%;
     align-items: center;
     .content-2-text {
@@ -68,9 +66,8 @@
     padding: 2%;
     margin: 4%;
     color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: $primary-color;
+    @include generateBorder(2px, 10px, $primary-color-black);
+    background-color: $primary-color-red;
     height: 500px;
 }
 
@@ -84,8 +81,7 @@
     padding-top: 3%;
     padding-left: 1%;
     padding-right: 15%;
-    border: 1px solid black;
-    border-radius: 5px;
+    @include generateBorder(1px, 5px, $primary-color-black);
     background-color: white;
     color: black;
     .copy-images {

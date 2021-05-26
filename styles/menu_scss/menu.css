@@ -1,4 +1,3 @@
-/* Variable Top Up */
 html,
 body,
 ul,
@@ -8,9 +7,8 @@ ol {
   font: 100% Roboto, sans-serif;
 }
 
-/* Variable Top Up */
 .header2 {
-  background-color: #B80424;
+  background-color: #b80424;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +40,7 @@ ol {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #B80424;
+  background-color: #b80424;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;

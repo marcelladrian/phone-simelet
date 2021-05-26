@@ -1,10 +1,11 @@
 $primary-font: Roboto,
 sans-serif;
-$primary-color-red: #B80424;
+$primary-color-red: #b80424;
 $primary-color-white: white;
 $primary-color-black: black;
-
-
-/* Variable Top Up */
-$primary-color: #B80424;
 $vertical: flex;
+@mixin generateBorder($size, $radius, $color) {
+    border: $size solid black;
+    border-radius: $radius;
+    border-color: $color;
+}
