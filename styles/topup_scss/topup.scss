@@ -1,0 +1,151 @@
+@import "variables";
+@import "reset";
+
+body {
+    font: 100% $primary-font;
+}
+
+.header {
+    display: $vertical;
+    background-color: $primary-color;
+    padding: 4%;
+
+    .headerName {
+        margin-left: 10%;
+        font-size: 150%;
+        color: white;
+    }
+
+    .menuBtn {
+        font-size: 150%;
+        color: white;
+    }
+}
+
+%display-shared {
+    margin-top: 5%;
+    display: $vertical;
+    margin-left: 3%;
+}
+
+.content-1 {
+    @extend %display-shared;
+
+    .content-1-text {
+        padding-top: 25%;
+        color: $primary-color;
+        -webkit-text-stroke: 1px black;
+        text-shadow: 3px 3px 0 lightgray;
+    }
+}
+
+.content-2 {
+    @extend %display-shared;
+
+    margin-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    border-color: $primary-color;
+    
+    background-color: $primary-color;
+    width: 70%;
+    align-items: center;
+
+    .content-2-text {
+        padding-left: 5%;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .content-2-subtext {
+        padding-left: 5%;
+        font-size: 13.2px;
+        color: white;
+    }
+}
+
+/* Top Up Sinarmas / ATM Bersama / Prima / Alto */
+.transferContent {
+    padding: 2%;
+    margin: 4%;
+
+    color: white;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: $primary-color;
+
+    height: 500px;
+}
+
+.image-account-content {
+    display: $vertical;
+}
+
+.account-container {
+    display: $vertical;
+    margin-left: 3%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 15%;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+
+    color: black;
+
+    .copy-images{
+        margin-left: 30%;
+    }
+}
+
+.account-text {
+    margin-left: 7%;
+    font-family: 'PT Serif';
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 10%;
+    list-style-type: circle;
+    
+    li {
+        padding-bottom: 5%;
+    }
+}
+
+
+/* Top Up Other Bank */
+
+.other {
+    margin-top: 5%;
+    margin-left: 0%;
+
+    .otherList {
+        display: $vertical;
+        align-items: center;
+
+        border-bottom: 1px solid gray;
+        padding: 5%;
+    
+        .otherImg {
+            width: 50%;
+        }
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    li {
+        list-style: none;
+        padding-bottom: 0%;
+    }
+}
