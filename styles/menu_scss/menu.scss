@@ -1,0 +1,219 @@
+@import "../reset";
+@import "../variables";
+
+.header2{
+    background-color: $primary-color-red;
+    display: flex;
+    height: 60px;
+
+    h2{
+        color: $primary-color-white;
+        font-family: $primary-font;
+        font-weight: normal;
+        margin-left: 13px;
+    }
+
+    .hamburgerIcon{
+        margin-top: 13px;
+        .menuIcon{
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 6px 0;
+            margin-left: 10px;
+        }
+
+    }
+}
+
+//menu
+.sidenav {
+    height: 85.7%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $primary-color-red;
+    font-family: $primary-font;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+    .menuText{
+        color: $primary-color-white;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+    .userText{
+        color: $primary-color-white;
+        margin-left: 22px;
+        margin-top: -10px;
+        opacity: 60%;
+    }
+
+    a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: $primary-color-white;
+        display: block;
+        transition: 0.3s;
+
+        &:hover{
+            color: lightgrey;
+        }
+    }
+
+    .cardMenu{
+        display: flex;
+
+        .cardImg{
+            margin-left: 12px;
+        }
+
+        .cardTitle{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: $primary-color-white;
+            display: block;
+            transition: 0.3s;
+            margin-left: -20px;
+            margin-top: 9px;
+
+            
+            &:hover{
+                color: lightgrey;
+            }
+        }
+    }
+
+    .topUpMenu{
+        display: flex;
+        margin-top: 6px;
+
+        .topUpImg{
+            margin-left: 14px;
+            width: auto;
+            height: 35px;
+        }
+
+        .topUpTitle{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: $primary-color-white;
+            display: block;
+            transition: 0.3s;
+            margin-left: -17px;
+            margin-top: 9px;
+
+            
+            &:hover{
+                color: lightgrey;
+            }
+        }
+    }
+
+    .addRegisterCardMenu{
+        display: flex;
+        margin-top: 10px;
+
+        .addRegisterCardImg{
+            margin-left: 19px;
+            width: auto;
+            height: 30px;
+        }
+
+        .addRegisterCardTitle{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: $primary-color-white;
+            display: block;
+            transition: 0.3s;
+            margin-left: -14px;
+            margin-top: 1px;
+
+            
+            &:hover{
+                color: lightgrey;
+            }
+        }
+    }
+
+    .profileMenu{
+        display: flex;
+        margin-top: 10px;
+
+        .profileImg{
+            margin-left: 19px;
+            width: auto;
+            height: 27px;
+        }
+
+        .profileTitle{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: $primary-color-white;
+            display: block;
+            transition: 0.3s;
+            margin-left: -11px;
+            margin-top: 1px;
+
+            
+            &:hover{
+                color: lightgrey;
+            }
+        }
+    }
+
+    .settingsMenu{
+        display: flex;
+        margin-top: 10px;
+
+        .settingsImg{
+            margin-left: 16px;
+            width: auto;
+            height: 30px;
+        }
+
+        .settingsTitle{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            color: $primary-color-white;
+            display: block;
+            transition: 0.3s;
+            margin-left: -11px;
+            margin-top: 3px;
+
+            
+            &:hover{
+                color: lightgrey;
+            }
+        }
+    }
+
+    
+
+    .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegisterCardPage</title>
+    <link rel="stylesheet" href="../styles/menu_scss/menu.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/registerCard_scss/registerCard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div id="mySidenav" class="sidenav">
+      <h2 class="menuText">MENU</h2>
+      <h5 class="userText">Welcome, Calvin Frans E</h5>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <div class="cardMenu">
+        <img class="cardImg" src="../asset/card.png" alt="card" />
+        <a class="cardTitle" href="#">Card</a>
+      </div>
+
+      <div class="topUpMenu">
+        <img class="topUpImg" src="../asset/topup.png" alt="topup" />
+        <a class="topUpTitle" href="topUp/topupPageFrame.htm">Top Up</a>
+      </div>
+
+      <div class="addRegisterCardMenu">
+        <img
+          class="addRegisterCardImg"
+          src="../asset/addregistercard.png"
+          alt="addregistercard"
+        />
+        <a class="addRegisterCardTitle" href="addCardPageFrame.htm">Add / Register Card</a>
+      </div>
+
+      <div class="profileMenu">
+        <img class="profileImg" src="../asset/profile.png" alt="topup" />
+        <a class="profileTitle" href="profilePageFrame.htm">Profile</a>
+      </div>
+
+      <div class="settingsMenu">
+        <img class="settingsImg" src="../asset/settings.png" alt="topup" />
+        <a class="settingsTitle" href="settingsPageFrame.htm">Settings</a>
+      </div>
+    </div>
+
+    <div class="header2">
+      <div class="hamburgerIcon" onclick="openNav()">
+        <div class="menuIcon"></div>
+        <div class="menuIcon"></div>
+        <div class="menuIcon"></div>
+      </div>
+      <h2>Register Card</h2>
+    </div>
+    <!-- header -->
+
+    <!-- add card content -->
+    <div class="content">
+      <img src="../asset/logo.png" />
+      <div class="field">
+        <form action="RegisterPageFrame.htm">
+          <label class="balance" for="balance">BALANCE</label><br />
+          <input type="number" id="balance" name="balance" /><br />
+          <label class="password" for="password">PASSWORD</label><br />
+          <input type="password" id="password" name="password" />
+          <i class="fa fa-eye" id="togglePassword"></i><br />
+          <label class="confirmPassword" for="confirmPassword"
+            >CONFIRM PASSWORD</label
+          ><br />
+          <input type="password" id="confirmPassword" name="confirmPassword" />
+          <i class="fa fa-eye" id="toogleConfirmPassword"></i>
+        </form>
+
+        <div class="registerCardBtn">
+          <button id="myBtn">REGISTER CARD</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="message">
+              <h4>YOUR BALANCE ID :</h4> <br>
+              <h3>bHASDbhsadhsdajiXI10dsaS4x</h3>
+              <button class="okBtn" onclick="location.href='addCardPageFrame.htm'">
+                GO TO ADD CARD
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- add card content -->
+
+    <script src="../script/menu_js/menu.js"></script>
+    <script src="../script/registerCard_js/registerCard.js"></script>
+  </body>
+</html>
