@@ -1,13 +1,15 @@
+/* Variable Top Up */
 html,
 body,
 ul,
 ol {
   margin: 0;
   padding: 0;
+  font: 100% Roboto, sans-serif;
 }
 
+/* Variable Top Up */
 .optMenu {
-  font-family: Roboto, sans-serif;
   margin-left: 15px;
   margin-top: 20px;
 }

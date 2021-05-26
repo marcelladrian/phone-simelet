@@ -1,15 +1,17 @@
+/* Variable Top Up */
 html,
 body,
 ul,
 ol {
   margin: 0;
   padding: 0;
+  font: 100% Roboto, sans-serif;
 }
 
+/* Variable Top Up */
 .content {
   text-align: center;
   margin-top: -15px;
-  font-family: Roboto, sans-serif;
 }
 
 .content img {
@@ -25,10 +27,6 @@ ol {
   font-weight: bold;
   font-size: 11pt;
   color: #B80424;
-}
-
-.content .field h6 {
-  font-family: Roboto, sans-serif;
 }
 
 .content .field label {
@@ -201,10 +199,6 @@ ol {
   border-radius: 10px;
   border: 1px solid #888;
   width: 80%;
-}
-
-.content .field .modal-content .message {
-  font-family: Roboto, sans-serif;
 }
 
 .content .field .modal-content .message h4 {

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="../styles/listAllCard_scss/listAllCard.css" />
+    <link rel="stylesheet" href="../styles/menu_scss/menu.css" />
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <h2 class="menuText">MENU</h2>
+        <h5 class="userText">Welcome, Calvin Frans E</h5>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a
+      >
+
+      <div class="cardMenu">
+        <img class="cardImg" src="../asset/card.png" alt="card" />
+        <a class="cardTitle" href="listAllCardPageFrame.htm">Card</a>
+    </div>
+
+    <div class="topUpMenu">
+        <img class="topUpImg" src="../asset/topup.png" alt="topup" />
+        <a class="topUpTitle" href="topUp/topupPageFrame.htm">Top Up</a>
+    </div>
+
+    <div class="addRegisterCardMenu">
+        <img class="addRegisterCardImg" src="../asset/addregistercard.png" alt="addregistercard" />
+        <a class="addRegisterCardTitle" href="addCardPageFrame.htm">Add / Register Card</a>
+    </div>
+
+    <div class="profileMenu">
+        <img class="profileImg" src="../asset/profile.png" alt="topup" />
+        <a class="profileTitle" href="profilePageFrame.htm">Profile</a>
+    </div>
+
+    <div class="settingsMenu">
+        <img class="settingsImg" src="../asset/settings.png" alt="topup" />
+        <a class="settingsTitle" href="settingsPageFrame.htm">Settings</a>
+    </div>
+
+    </div>
+
+    <div class="header2">
+        <div class="hamburgerIcon" onclick="openNav()">
+            <div class="menuIcon"></div>
+            <div class="menuIcon"></div>
+            <div class="menuIcon"></div>
+        </div>
+        <h2>Card</h2>
+    </div>
+
+    <div class="content">
+        <ul class="cards card--active">
+            <li class="card card--current">
+                <a href="typeCard_htm/huraHuraType.htm"><img src="../asset/card_hura.png"></a>
+            </li>
+            <li class="card card--next">
+                <a href="typeCard_htm/familiaType.htm"><img src="../asset/card_familia.png"></a>
+            </li>
+            <li class="card card--out">
+                <a href="typeCard_htm/korporatType.htm"><img src="../asset/card_korporat.png"></a>
+            </li>
+        </ul>
+
+        <div class="history">
+            <h3>ALL HISTORY TRANSACTION</h3>
+            <hr>
+            <div class="transaction">
+                <img src="../asset/cashOut.png">
+                <div class="text">
+                    <label>KRL (Stasiun Riwi Binti) <a class="type" href="typeCard_htm/korporatType.htm">KORPORAT</a></label>
+                    <p>26/05/21 20:05:39</p>
+                    <p>Rp 4.000</p>
+                </div>
+            </div>
+            <div class="transaction">
+                <img src="../asset/cashIn.png">
+                <div class="text">
+                    <label>Top-up (Sipip+) <a class="type" href="typeCard_htm/korporatType.htm">KORPORAT</a></label>
+                    <p>26/05/21 20:05:39</p>
+                    <p>Rp 200.000</p>
+                </div>
+            </div>
+            <div class="transaction">
+                <img src="../asset/cashIn.png">
+                <div class="text">
+                    <label>Top-up (Indomirit)<a class="type" href="typeCard_htm/familiaType.htm">FAMILIA</a></label>
+                    <p>26/05/21 20:05:39</p>
+                    <p>Rp 100.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../script/menu_js/menu.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/1.3.0/cash.min.js"></script>
+    <script src="../script/listAllCard_js/listAllCard.js"></script>
+</body>
+
+</html>
