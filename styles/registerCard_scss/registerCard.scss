@@ -13,18 +13,21 @@
             font-size: 11pt;
             margin-left: -40%;
             color: $primary-color-red;
+            -webkit-text-stroke: 0.3px $primary-color-black;
         }
         .password {
             font-weight: bold;
             font-size: 11pt;
             margin-left: -37%;
             color: $primary-color-red;
+            -webkit-text-stroke: 0.3px $primary-color-black;
         }
         .confirmPassword {
             font-weight: bold;
             font-size: 11pt;
             margin-left: -17%;
             color: $primary-color-red;
+            -webkit-text-stroke: 0.3px $primary-color-black;
         }
         input {
             border-top: 0cm;
@@ -98,6 +101,7 @@
                     font-size: 14px;
                     font-weight: bold;
                     color: $primary-color-red;
+                    -webkit-text-stroke: 0.3px $primary-color-black;
                 }
                 h3 {
                     font-size: 14px;
@@ -105,6 +109,7 @@
                     margin-left: -24%;
                     font-weight: bold;
                     color: $primary-color-red;
+                    -webkit-text-stroke: 0.3px $primary-color-black;
                 }
                 .okBtn {
                     background-color: $primary-color-red;
@@ -126,6 +131,56 @@
                         border: 2px solid $primary-color-red;
                         border-radius: 5px;
                         box-shadow: 0px 0.25px 1px rgba(0, 0, 0, 0.039), 0px 0.85px 3px rgba(0, 0, 0, 0.19);
+                    }
+                }
+                .balanceCopy{
+                    display: flex;
+                    .balanceId{
+                        width: 100%;
+                        margin-left: 1px;
+                    }
+                    .copy-images{
+                        margin-top: -55px;
+                        margin-left: -250px;
+                        position: relative;
+                        display: inline-block;
+                        cursor: pointer;
+                        user-select: none;
+                        .popuptext {
+                            visibility: hidden;
+                            width: 100px;
+                            background-color: $primary-color-red;
+                            color: #fff;
+                            border: 1px solid $primary-color-black;
+                            text-align: center;
+                            border-radius: 6px;
+                            padding: 8px 0;
+                            position: absolute;
+                            z-index: 1;
+                            bottom: 125%;
+                            left: 50%;
+                            margin-left: 50px;
+                            margin-bottom: -45px;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                top: 100%;
+                                left: 50%;
+                                margin-left: -5px;
+                                border-width: 5px;
+                                border-style: solid;
+                                border-color: #555 transparent transparent transparent;
+                              }
+                          }
+                          .show {
+                            visibility: visible;
+                            -webkit-animation: fadeIn 1s;
+                            animation: fadeIn 1s;
+                          }     
+                          @keyframes fadeIn {
+                            from {opacity: 0;}
+                            to {opacity:1 ;}
+                          }
                     }
                 }
             }
