@@ -1,0 +1,52 @@
+@import "../reset";
+@import "../variables";
+body {
+    font-family: $primary-font;
+}
+
+.content {
+    .card {
+        text-align: center;
+        padding: 10%;
+        a {
+            img {
+                width: 90%;
+                border-radius: 6%;
+                box-shadow: 2px 2px 10px $primary-color-black;
+            }
+        }
+    }
+    .history {
+        h3 {
+            margin-left: 3%;
+        }
+        hr {
+            width: 95%;
+            background-color: $primary-color-black;
+        }
+        .transaction {
+            padding: 3%;
+            img {
+                width: 50px;
+                float: left;
+                padding-right: 5%;
+            }
+            .text {
+                label {
+                    font-size: 10pt;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 9pt;
+                    color: gray;
+                    line-height: 10%;
+                }
+            }
+            .noTransaction {
+                margin: 20%;
+                text-align: center;
+                color: gray;
+            }
+        }
+    }
+}
