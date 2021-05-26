@@ -1,0 +1,158 @@
+@import "../reset";
+@import "../variables";
+
+.content {
+  text-align: center;
+
+  img {
+    padding-top: 15%;
+    margin-left: 200px;
+  }
+  .field {
+    padding-top: 6%;
+    .balance {
+      font-weight: bold;
+      font-size: 11pt;
+      font-family: $primary-font;
+      margin-left: -40%;
+      color: $primary-color-red;
+    }
+    .password {
+      font-weight: bold;
+      font-size: 11pt;
+      font-family: $primary-font;
+      margin-left: -37%;
+      color: $primary-color-red;
+    }
+    .confirmPassword {
+      font-weight: bold;
+      font-size: 11pt;
+      font-family: $primary-font;
+      margin-left: -17%;
+      color: $primary-color-red;
+    }
+    input {
+      border-top: 0cm;
+      border-left: 0cm;
+      border-right: 0cm;
+      margin-bottom: 7%;
+      height: 20px;
+      width: 60%;
+    }
+    i {
+      margin-left: -30px;
+      cursor: pointer;
+    }
+    .registerCardBtn {
+      padding-top: 10%;
+      button {
+        background-color: $primary-color-red;
+        height: 40px;
+        width: 60%;
+        color: $primary-color-white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0.25px 1px rgba(0, 0, 0, 0.039),
+          0px 0.85px 3px rgba(0, 0, 0, 0.19);
+        &:hover {
+          background-color: white;
+          border-color: $primary-color-red;
+          height: 40px;
+          width: 60%;
+          color: $primary-color-red;
+          font-weight: bold;
+          border: 2px solid $primary-color-red;
+          border-radius: 5px;
+          box-shadow: 0px 0.25px 1px rgba(0, 0, 0, 0.039),
+            0px 0.85px 3px rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      margin-top: 100px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #888;
+      width: 80%;
+
+      .message {
+        font-family: $primary-font;
+        h4 {
+          margin-left: -42%;
+          font-size: 14px;
+          font-weight: bold;
+          color: $primary-color-red;
+        }
+        h3 {
+          font-size: 14px;
+          margin-top: -20px;
+          margin-left: -24%;
+          font-weight: bold;
+          color: $primary-color-red;
+        }
+        .okBtn {
+          background-color: $primary-color-red;
+          height: 40px;
+          width: 60%;
+          color: $primary-color-white;
+          font-weight: bold;
+          border: none;
+          border-radius: 5px;
+          margin-top: 10px;
+          box-shadow: 0px 0.25px 1px rgba(0, 0, 0, 0.039),
+            0px 0.85px 3px rgba(0, 0, 0, 0.19);
+
+          &:hover {
+            background-color: white;
+            border-color: $primary-color-red;
+            height: 40px;
+            width: 60%;
+            color: $primary-color-red;
+            font-weight: bold;
+            border: 2px solid $primary-color-red;
+            border-radius: 5px;
+            box-shadow: 0px 0.25px 1px rgba(0, 0, 0, 0.039),
+              0px 0.85px 3px rgba(0, 0, 0, 0.19);
+          }
+        }
+      }
+
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+
+        &:hover {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        &:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
