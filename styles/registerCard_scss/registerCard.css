@@ -25,6 +25,7 @@ ol {
   font-size: 11pt;
   margin-left: -40%;
   color: #b80424;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .field .password {
@@ -32,6 +33,7 @@ ol {
   font-size: 11pt;
   margin-left: -37%;
   color: #b80424;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .field .confirmPassword {
@@ -39,6 +41,7 @@ ol {
   font-size: 11pt;
   margin-left: -17%;
   color: #b80424;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .field input {
@@ -122,6 +125,7 @@ ol {
   font-size: 14px;
   font-weight: bold;
   color: #b80424;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .modal .modal-content .message h3 {
@@ -130,6 +134,7 @@ ol {
   margin-left: -24%;
   font-weight: bold;
   color: #b80424;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .modal .modal-content .message .okBtn {

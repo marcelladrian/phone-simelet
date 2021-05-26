@@ -218,6 +218,7 @@ ol {
   margin-top: -5px;
   font-weight: bold;
   color: #b80424;
+  -webkit-text-stroke: 0.4px black;
 }
 
 .content .field .modal-content .message .okBtn {
