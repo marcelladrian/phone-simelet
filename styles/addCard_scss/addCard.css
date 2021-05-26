@@ -25,6 +25,7 @@ ol {
   font-weight: bold;
   font-size: 11pt;
   color: #b80424;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .field label {
@@ -32,6 +33,7 @@ ol {
   font-size: 11pt;
   margin-left: -35%;
   color: #b80424;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .field input {
@@ -218,7 +220,7 @@ ol {
   margin-top: -5px;
   font-weight: bold;
   color: #b80424;
-  -webkit-text-stroke: 0.4px black;
+  -webkit-text-stroke: 0.3px black;
 }
 
 .content .field .modal-content .message .okBtn {

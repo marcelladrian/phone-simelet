@@ -12,12 +12,14 @@
             font-weight: bold;
             font-size: 11pt;
             color: $primary-color-red;
+            -webkit-text-stroke: 0.3px $primary-color-black;
         }
         label {
             font-weight: bold;
             font-size: 11pt;
             margin-left: -35%;
             color: $primary-color-red;
+            -webkit-text-stroke: 0.3px $primary-color-black;
         }
         input {
             border-top: 0cm;
@@ -178,7 +180,7 @@
                     margin-top: -5px;
                     font-weight: bold;
                     color: $primary-color-red;
-                    -webkit-text-stroke: 0.4px $primary-color-black;
+                    -webkit-text-stroke: 0.3px $primary-color-black;
                 }
                 .okBtn {
                     background-color: $primary-color-red;
