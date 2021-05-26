@@ -1,7 +1,7 @@
 @import "../reset";
 @import "../variables";
 
-.header{
+.header2{
     background-color: $primary-color-red;
     display: flex;
     height: 60px;
@@ -15,7 +15,6 @@
 
     .hamburgerIcon{
         margin-top: 13px;
-
         .menuIcon{
             width: 30px;
             height: 4px;

@@ -6,7 +6,8 @@ ol {
   padding: 0;
 }
 
-.header {
+/* Variable Top Up */
+.header2 {
   background-color: #B80424;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,18 +15,18 @@ ol {
   height: 60px;
 }
 
-.header h2 {
+.header2 h2 {
   color: white;
   font-family: Roboto, sans-serif;
   font-weight: normal;
   margin-left: 13px;
 }
 
-.header .hamburgerIcon {
+.header2 .hamburgerIcon {
   margin-top: 13px;
 }
 
-.header .hamburgerIcon .menuIcon {
+.header2 .hamburgerIcon .menuIcon {
   width: 30px;
   height: 4px;
   background-color: white;

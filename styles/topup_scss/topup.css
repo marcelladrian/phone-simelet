@@ -1,3 +1,4 @@
+/* Variable Top Up */
 html,
 body,
 ul,
@@ -7,7 +8,7 @@ ol {
 }
 
 body {
-  font: 100% "Roboto", sans-serif;
+  font: 100% Roboto, sans-serif;
 }
 
 .header {
@@ -16,6 +17,9 @@ body {
   display: flex;
   background-color: #B80424;
   padding: 4%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .headerName {
@@ -24,9 +28,12 @@ body {
   color: white;
 }
 
-.header .menuBtn {
-  font-size: 150%;
-  color: white;
+.header .hamburgerIcon .menuIcon {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+  margin-left: 10px;
 }
 
 .content-1, .content-2 {

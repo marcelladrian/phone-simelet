@@ -1,5 +1,5 @@
-@import "variables";
-@import "reset";
+@import "../variables";
+@import "../reset";
 
 body {
     font: 100% $primary-font;
@@ -9,6 +9,7 @@ body {
     display: $vertical;
     background-color: $primary-color;
     padding: 4%;
+    align-items: center;
 
     .headerName {
         margin-left: 10%;
@@ -16,9 +17,15 @@ body {
         color: white;
     }
 
-    .menuBtn {
-        font-size: 150%;
-        color: white;
+    .hamburgerIcon{
+        .menuIcon{
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 6px 0;
+            margin-left: 10px;
+        }
+
     }
 }
 
